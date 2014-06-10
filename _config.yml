@@ -1,0 +1,13 @@
+# Site settings
+title: Java ASM 类库学习
+email: lzy7750015@gmail.com
+description: "Java ASM 类库学习"
+baseurl: ""
+# url: "http://leeln.com/java-asm/"
+url: "http://localhost:4000/"
+# Build settings
+markdown: kramdown
+permalink: pretty
+owner:
+  name:           欧阳澄泓
+  github:         https://github.com/excalibur/java-asm

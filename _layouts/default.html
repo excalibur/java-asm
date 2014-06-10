@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+
+{% include header.html %}
+    <div class="container">
+      {{ content }}
+     
+    </div><!-- /container -->
+
+     
+
+    {% include footer.html %}
+
+    <script type="text/javascript" src="{{ site.url }}assets/components/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="{{ site.url }}assets/js/classie.js"></script>
+    <script type="text/javascript" src="{{ site.url }}assets/js/gnmenu.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+       new gnMenu( document.getElementById( 'gn-menu' ) );
+
+      });
+
+    </script>
+    </body>
+</html>
