@@ -3,8 +3,8 @@ title: Java ASM 类库学习指导教程
 email: lzy7750015@gmail.com
 description: "ASM Library Learn Reference Guide"
 baseurl: ""
-url: "http://leeln.com/java-asm/"
-# url: "http://localhost:4000/"
+url: "http://leeln.com/java-asm"
+# url: "http://localhost:4000"
 # Build settings
 markdown: kramdown
 permalink: pretty
