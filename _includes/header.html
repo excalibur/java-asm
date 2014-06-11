@@ -12,7 +12,7 @@
                   {% for p in site.pages %}
                     {% if p.weight == weight %}
                      <li>
-                        <a href="{{ p.url }}" class="gn-icon"><i>{{ p.num }}</i> <span>{{ p.contents }}</span></a>
+                        <a href="{{ site.url }}{{ p.url }}" class="gn-icon"><i>{{ p.num }}</i> <span>{{ p.contents }}</span></a>
                       </li>
                         
                     {% endif %}
