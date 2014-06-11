@@ -8,14 +8,22 @@ layout: none
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    {% for weight in (0..20) %}
+      {% for p in site.pages %}
+        {% if p.weight == weight %}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+        {% if p.num == "首" %}
+         <title>{{ p.contents | xml_escape }}</title>
+        {% else %}
+         <title>{{ p.num | xml_escape }}、{{ p.contents | xml_escape }}</title>
+        {% endif %}
+        <description>{{ p.content | xml_escape }}</description>
+        <pubDate>{{ p.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ p.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ p.url | prepend: site.baseurl | prepend: site.url }}</guid>
       </item>
-    {% endfor %}
+    {% endif %}
+   {% endfor %}
+ {% endfor %}
   </channel>
 </rss>

@@ -1,8 +1,15 @@
 ---
-layout: default
+layout: page
+contents: "基本语法"
+num: "三"
+weight: 3
 ---
 
-<div class="jumbotron">
-  <h1>{{ site.title }}</h1>
-  <p class="lead">{{ site.description }}</p>
-</div>
+### 
+
+
+
+### 参考文档
+
+-
+

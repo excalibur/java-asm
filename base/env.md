@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
+contents: "基本环境"
+num: "二"
+weight: 2
 ---
 
-<div class="jumbotron">
-  <h1>{{ site.title }}</h1>
-  <p class="lead">{{ site.description }}</p>
-</div>
